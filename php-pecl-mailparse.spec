@@ -1,6 +1,6 @@
 %define		_modname	mailparse
 Summary:	Email message manipulation
-Summary(pl):	Manipulacje na wiadomo¶ciach Email
+Summary(pl):	Obrabianie wiadomo¶ci E-mail
 Name:		php-pecl-%{_modname}
 Version:	0.9
 Release:	0.1
@@ -21,6 +21,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Mailparse is an extension for parsing and working with email messages.
 It can deal with rfc822 and rfc2045 (MIME) compliant messages.
 
+%description -l pl
+Mailparse to rozszerzenie do analizy i pracy z wiadomo¶ciami poczty
+elektronicznej. Radzi sobie z wiadomo¶ciami zgodnymi z RFC822 oraz
+RFC2024 (MIME).
+
 %prep
 %setup -q -c
 
@@ -32,7 +37,7 @@ phpize
 %configure \
 	--with-%{_modname}=%{_prefix}/X11R6/include/X11/
 
-%{__make} CPPFLAGS="-DHAVE_CONFIG_H -I%{_prefix}/X11R6/include/X11/"
+%{__make} CPPFLAGS="-DHAVE_CONFIG_H -I%{_prefix}/X11R6/include/X11"
 
 %install
 rm -rf $RPM_BUILD_ROOT

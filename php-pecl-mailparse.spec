@@ -8,9 +8,9 @@ Version:	0.9.2
 Release:	0.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_modname}-%{version}.tgz
+Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	73478cc638522aefb7315cc1976f76d4
-URL:		http://pear.php.net/package/mailparse/
+URL:		http://pecl.php.net/package/mailparse/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	php-devel

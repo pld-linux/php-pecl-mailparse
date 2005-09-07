@@ -11,8 +11,6 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	73478cc638522aefb7315cc1976f76d4
 URL:		http://pecl.php.net/package/mailparse/
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRequires:	php-devel
 Requires:	php-common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

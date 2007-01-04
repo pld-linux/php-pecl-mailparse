@@ -12,7 +12,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	73478cc638522aefb7315cc1976f76d4
 URL:		http://pecl.php.net/package/mailparse/
-BuildRequires:	php-devel >= 3:5.0.0
+BuildRequires:	php-devel >= 4:5.2.0-7.2
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
 Requires:	php-common >= 4:5.0.4

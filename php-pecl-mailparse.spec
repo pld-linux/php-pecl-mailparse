@@ -3,7 +3,7 @@
 %define		_modname	mailparse
 %define		_status		beta
 Summary:	Email message manipulation
-Summary(pl.UTF-8):   Obrabianie wiadomości E-mail
+Summary(pl.UTF-8):	Obrabianie wiadomości E-mail
 Name:		php-pecl-%{_modname}
 Version:	0.9.2
 Release:	0.3

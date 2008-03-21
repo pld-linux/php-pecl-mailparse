@@ -1,16 +1,14 @@
-# TODO
-# - doesn't build
 %define		_modname	mailparse
 %define		_status		beta
 Summary:	Email message manipulation
 Summary(pl.UTF-8):	Obrabianie wiadomości E-mail
 Name:		php-pecl-%{_modname}
-Version:	0.9.2
-Release:	0.3
+Version:	2.1.3
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
-# Source0-md5:	73478cc638522aefb7315cc1976f76d4
+# Source0-md5:	286cd789079763f975164e450ec62f39
 URL:		http://pecl.php.net/package/mailparse/
 BuildRequires:	php-devel >= 4:5.2.0-7.2
 BuildRequires:	rpmbuild(macros) >= 1.344
@@ -46,7 +44,7 @@ phpize
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{php_sysconfdir}/conf.d,%{php_extensiondir}}
 
-install %{_smodname}-%{version}/modules/%{_modname}.so $RPM_BUILD_ROOT%{php_extensiondir}
+install %{_modname}-%{version}/modules/%{_modname}.so $RPM_BUILD_ROOT%{php_extensiondir}
 cat <<'EOF' > $RPM_BUILD_ROOT%{php_sysconfdir}/conf.d/%{_modname}.ini
 ; Enable %{_modname} extension module
 extension=%{_modname}.so

@@ -1,14 +1,14 @@
 %define		_modname	mailparse
-%define		_status		beta
+%define		_status		stable
 Summary:	Email message manipulation
 Summary(pl.UTF-8):	Obrabianie wiadomości E-mail
 Name:		php-pecl-%{_modname}
-Version:	2.1.3
+Version:	2.1.5
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
-# Source0-md5:	286cd789079763f975164e450ec62f39
+# Source0-md5:	0c0134fb6f5903c8fb6c9e2205263d2c
 URL:		http://pecl.php.net/package/mailparse/
 BuildRequires:	php-devel >= 4:5.2.0-7.2
 BuildRequires:	rpmbuild(macros) >= 1.344

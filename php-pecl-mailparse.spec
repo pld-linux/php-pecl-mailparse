@@ -3,12 +3,12 @@
 Summary:	%{modname} - email message manipulation
 Summary(pl.UTF-8):	%{modname} - obrabianie wiadomości E-mail
 Name:		php-pecl-%{modname}
-Version:	2.1.5
-Release:	3
+Version:	2.1.6
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-# Source0-md5:	0c0134fb6f5903c8fb6c9e2205263d2c
+# Source0-md5:	0f84e1da1d074a4915a9bcfe2319ce84
 URL:		http://pecl.php.net/package/mailparse/
 BuildRequires:	php-devel >= 4:5.2.0-7.2
 BuildRequires:	rpmbuild(macros) >= 1.344

@@ -5,7 +5,7 @@ Summary:	%{modname} - email message manipulation
 Summary(pl.UTF-8):	%{modname} - obrabianie wiadomości E-mail
 Name:		%{php_name}-pecl-%{modname}
 Version:	2.1.6
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -15,6 +15,7 @@ BuildRequires:	%{php_name}-devel >= 4:5.2.0-7.2
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Requires:	php(core) >= 5.0.4
+Provides:	php(%{modname}) = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

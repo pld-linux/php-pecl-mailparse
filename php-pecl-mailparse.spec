@@ -14,6 +14,7 @@ URL:		http://pecl.php.net/package/mailparse/
 BuildRequires:	%{php_name}-devel >= 4:7.0.0
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
+Requires:	%{php_name}-mbstring
 Provides:	php(%{modname}) = %{version}
 Obsoletes:	php-pecl-mailparse < 2.1.6-5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

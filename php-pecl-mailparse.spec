@@ -1,17 +1,17 @@
 %define		php_name	php%{?php_suffix}
 %define		modname	mailparse
-%define		status		stable
 Summary:	%{modname} - email message manipulation
 Summary(pl.UTF-8):	%{modname} - obrabianie wiadomości E-mail
 Name:		%{php_name}-pecl-%{modname}
-Version:	2.1.6
-Release:	6
+# for PHP < 7.0.0 build, see v2.1.x branch
+Version:	3.0.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-# Source0-md5:	0f84e1da1d074a4915a9bcfe2319ce84
+# Source0-md5:	5ae0643a11159414c7e790c73a9e25ec
 URL:		http://pecl.php.net/package/mailparse/
-BuildRequires:	%{php_name}-devel >= 4:5.2.0-7.2
+BuildRequires:	%{php_name}-devel >= 4:7.0.0
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Provides:	php(%{modname}) = %{version}
@@ -22,14 +22,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Mailparse is an extension for parsing and working with email messages.
 It can deal with rfc822 and rfc2045 (MIME) compliant messages.
 
-In PECL status of this package is: %{status}.
-
 %description -l pl.UTF-8
 Mailparse to rozszerzenie do analizy i pracy z wiadomościami poczty
 elektronicznej. Radzi sobie z wiadomościami zgodnymi z RFC822 oraz
 RFC2024 (MIME).
-
-To rozszerzenie ma w PECL status: %{status}.
 
 %prep
 %setup -qc
